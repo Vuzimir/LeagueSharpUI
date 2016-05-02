@@ -1,0 +1,17 @@
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Debug\LSharpUI.exe.config
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Debug\LSharpUI.exe
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Debug\LSharpUI.pdb
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Debug\MahApps.Metro.dll
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Debug\MahApps.Metro.xml
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.csprojResolveAssemblyReference.cache
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\MainWindow.baml
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\App.baml
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\MainWindow.g.cs
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\App.g.cs
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI_MarkupCompile.cache
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.g.resources
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.Properties.Resources.resources
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.csproj.GenerateResource.Cache
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.exe
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.pdb
