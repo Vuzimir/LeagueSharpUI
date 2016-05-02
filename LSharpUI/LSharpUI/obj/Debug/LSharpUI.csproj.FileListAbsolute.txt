@@ -15,3 +15,6 @@ C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharp
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.csproj.GenerateResource.Cache
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.exe
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.pdb
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Debug\MahApps.Metro.pdb
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\Resources\Icons.baml
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\Resources\IconsNonShared.baml

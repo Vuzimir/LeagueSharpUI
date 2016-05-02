@@ -2,10 +2,109 @@
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
-                      Title="MainWindow"
-                      Height="350"
-                      Width="525">
-    <Grid>
+                      xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      TitleCaps="False"
+                      Title="L# - "
+                      Height="449.355"
+                      Width="900.596" WindowStartupLocation="CenterScreen" FontFamily="Arial">
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands>
+            <Button x:Name="Connectedb">
+                <Button.ToolTip>
+                    <ToolTip>
+                        <StackPanel>
+                            <TextBlock x:Name="injected">Not Injected</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="14" Height="14"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" x:Name="iconinjected"
+                         Visual="{StaticResource appbar_network_disconnect}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </StackPanel>
+            </Button>
+            <Button Click="News_OnClick">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="14" Height="14"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_page_text}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="News" />
+                </StackPanel>
+            </Button>
+            <Button Click="Assemblies_OnClick">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="14" Height="14"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_layer}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Assemblies" />
+                </StackPanel>
+            </Button>
+            <Button Click="AssemblyDB_OnClick">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="14" Height="14"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_layer}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="AssemblyDB" />
+                </StackPanel>
+            </Button>
+            <Button Click="Unknown_OnClick"
+                    x:Name="Unknowb">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="14" Height="14"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_refresh}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Unknown" />
+                </StackPanel>
+            </Button>
+            <Button Click="Settings_OnClick">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="14" Height="14"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_settings}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Settings" />
+                </StackPanel>
+            </Button>
 
+        </controls:WindowCommands>
+
+    </controls:MetroWindow.RightWindowCommands>
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="228,190,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="330"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="312,297,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click"/>
     </Grid>
+
 </Controls:MetroWindow>
