@@ -15,6 +15,11 @@ using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using System.Windows.Media.Animation;
+using System.Collections;
+using System.Data;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using MahApps.Metro;
 
 namespace LSharpUI
 {
@@ -33,15 +38,52 @@ namespace LSharpUI
         int GenralC = 0;
         int GenralH = 0;
         int GenralL = 0;
+        int themeedit = 0;
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = this;
             this.Title += "Vuzimir/Normal - 0/2 - 2.0.14.15";
-            /*BrushConverter bc = new BrushConverter();
-            Brush brush = (Brush)bc.ConvertFrom("#FFFFFF");
-            brush.Freeze();
-            ButtonG.Background = brush;*/
+            //-----------------Settings grid-------------------------------------
+            List<TicketInfo> ticketsList = new List<TicketInfo> 
+            {
+                new TicketInfo{ Subject="Anti-AFK", Status="True"},
+                new TicketInfo{ Subject="Debug Console", Status="False"},
+                new TicketInfo{ Subject="Display enemy tower range", Status="True"},
+                new TicketInfo{ Subject="Extended Zoom", Status="False"},
+                new TicketInfo{ Subject="Show Ping", Status="True"},
+                new TicketInfo{ Subject="Show Drawings", Status="True"},
+                new TicketInfo{ Subject="Send Anonymous Assembly Statistics", Status="True"},
+                new TicketInfo{ Subject="Always Inject Default Profile", Status="False"}
+            };
+            dgData.ItemsSource = ticketsList;
+            //---------languages-----------------------------
+            Langcb.Items.Add("English");
+            Langcb.Items.Add("Soon...");
+            Langcb.Text = "English";
+            //---------Themes-----------------------------
+            Themecb.Items.Add("Red");
+            Themecb.Items.Add("Green");
+            Themecb.Items.Add("Blue");
+            Themecb.Text = "Blue";
 
+
+
+            themeedit = 1;
+        }
+        public class TicketInfo
+        {
+            public string Subject { get; set; }
+            public string Status { get; set; }
+        }
+
+        public class StatusList : List<string>
+        {
+            public StatusList()
+            {
+                this.Add("True");
+                this.Add("False");
+            }
         }
         private async void News_OnClick(object sender, RoutedEventArgs e)
         {
@@ -270,6 +312,30 @@ namespace LSharpUI
         private void ButtonL_MouseLeave(object sender, MouseEventArgs e)
         {
             EnableSettings("LogLeave");
+        }
+        private void Row_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+                {                
+                    // Ensure row was clicked and not empty space
+                    DataGridRow row = ItemsControl.ContainerFromElement((DataGrid)sender, e.OriginalSource as DependencyObject) as DataGridRow;
+                    if (row == null) return;
+                    
+                    TextBox1.Text = "wrk";
+
+                }
+        private void Langcb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+        private void Themecb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (themeedit == 1)
+            {
+                TextBox1.Text = "Changed";
+                String txt = Themecb.Text;
+                ThemeManager.ChangeAppStyle(this,
+                                    ThemeManager.GetAccent(txt),
+                                    ThemeManager.GetAppTheme("BaseLight"));
+            }
         }
 
     }
