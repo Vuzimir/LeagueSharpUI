@@ -110,7 +110,25 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
             <TabItem Header="Assemblies">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <CheckBox Content="Champion" HorizontalAlignment="Left" Margin="319,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.587,0.481"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="166"/>
+                    <CheckBox Content="Libary" HorizontalAlignment="Left" Margin="407,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.587,0.481"/>
+                    <CheckBox Content="Utility" HorizontalAlignment="Left" Margin="476,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.587,0.481"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="700,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+                    <DataGrid x:Name="dataGrid1" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="319" Width="859">
+                        <DataGrid.Columns>
+                            <DataGridCheckBoxColumn x:Name="CheckBoxColumn1" IsReadOnly="False" Width="100" ElementStyle="{DynamicResource MetroDataGridCheckBox}"
+                                        EditingElementStyle="{DynamicResource MetroDataGridCheckBox}" Header=""/>
+                            <DataGridTextColumn IsReadOnly="True" Width="140" Header="NAME" Binding="{Binding Name}" />
+                            <DataGridTextColumn IsReadOnly="True" Width="70" Header="TYPE" Binding="{Binding Type}" />
+                            <DataGridTextColumn IsReadOnly="True" Width="86" Header="VERSION" Binding="{Binding Version}" />
+                            <DataGridTextColumn IsReadOnly="True" Width="80" Header="AUTHOR" Binding="{Binding Author}" />
+                            <DataGridTextColumn IsReadOnly="True" Width="*" Header="DESCRIPTION" Binding="{Binding Desc}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBox x:Name="DebugText" HorizontalAlignment="Left" Height="23" Margin="88,369,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                </Grid>
             </TabItem>
             <TabItem Header="AssemblyDB">
                 <Grid Background="#FFE5E5E5"/>

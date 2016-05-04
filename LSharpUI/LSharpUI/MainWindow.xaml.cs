@@ -46,6 +46,8 @@ namespace LSharpUI
         bool AssembliesUpdate;
         bool UpdateCore;
         bool Inject;
+
+        List<TicketInfo> item = new List<TicketInfo>();
         public MainWindow()
         {
             InitializeComponent();
@@ -63,6 +65,15 @@ namespace LSharpUI
                 new TicketInfo{ Subject="Always Inject Default Profile", Status="False"}
             };
             dgData.ItemsSource = ticketsList;
+            //--------------Assemblys grid-----------------------
+            List<Assemblies> ticketsList2 = new List<Assemblies> 
+            {
+                new Assemblies{ Name="LeagueSharp.Common", Type="Libary", Version="1.0.0.50", Author="LeagueSharp", Desc=""},
+                new Assemblies{ Name="LeagueSharp.Data", Type="Libary", Version="1.1.0.0", Author="ChewyMoon", Desc="An  SDK for retrievnig LeagueSharp data."},
+                new Assemblies{ Name="BaseUlt3", Type="Utility", Version="1.0.0.0", Author="Beaving", Desc="Uses perfectly timed ultimate on enemyes that recall, will impact exactly when the enemy recalled to base"} 
+            };
+            dataGrid1.ItemsSource = ticketsList2;
+
             //---------languages-----------------------------
             Langcb.Items.Add("English");
             Langcb.Items.Add("Soon...");
@@ -95,10 +106,23 @@ namespace LSharpUI
 
             themeedit = 1;
         }
+        public class Assemblies
+        {
+            public string Name { get; set; }
+            public string Type { get; set; }
+            public string Version { get; set; }
+            public string Author { get; set; }
+            public string Desc { get; set; }
+            public CheckBox ch { get; set; }
+        }
+
+
         public class TicketInfo
         {
             public string Subject { get; set; }
             public string Status { get; set; }
+
+            public CheckBox ch { get; set; }
         }
 
         public class StatusList : List<string>
