@@ -39,10 +39,16 @@ namespace LSharpUI
         int GenralH = 0;
         int GenralL = 0;
         int themeedit = 0;
+
+        bool CloudIntegration;
+        bool AssemblyDebug;
+        bool DeveloperOptions;
+        bool AssembliesUpdate;
+        bool UpdateCore;
+        bool Inject;
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = this;
             this.Title += "Vuzimir/Normal - 0/2 - 2.0.14.15";
             //-----------------Settings grid-------------------------------------
             List<TicketInfo> ticketsList = new List<TicketInfo> 
@@ -65,9 +71,27 @@ namespace LSharpUI
             Themecb.Items.Add("Red");
             Themecb.Items.Add("Green");
             Themecb.Items.Add("Blue");
+            Themecb.Items.Add("Purple");
+            Themecb.Items.Add("Orange");
+            Themecb.Items.Add("Lime");
+            Themecb.Items.Add("Emerald");
+            Themecb.Items.Add("Teal");
+            Themecb.Items.Add("Cyan");
+            Themecb.Items.Add("Cobalt");
+            Themecb.Items.Add("Indigo");
+            Themecb.Items.Add("Violet");
+            Themecb.Items.Add("Pink");
+            Themecb.Items.Add("Magenta");
+            Themecb.Items.Add("Crimson");
+            Themecb.Items.Add("Amber");
+            Themecb.Items.Add("Yellow");
+            Themecb.Items.Add("Brown");
+            Themecb.Items.Add("Olive");
+            Themecb.Items.Add("Steel");
+            Themecb.Items.Add("Mauve");
+            Themecb.Items.Add("Taupe");
+            Themecb.Items.Add("Sienna");
             Themecb.Text = "Blue";
-
-
 
             themeedit = 1;
         }
@@ -330,12 +354,21 @@ namespace LSharpUI
         {
             if (themeedit == 1)
             {
-                TextBox1.Text = "Changed";
-                String txt = Themecb.Text;
-                ThemeManager.ChangeAppStyle(this,
-                                    ThemeManager.GetAccent(txt),
-                                    ThemeManager.GetAppTheme("BaseLight"));
+                String txt = Themecb.SelectedItem as string;
+                Tuple<AppTheme, Accent> appStyle = ThemeManager.DetectAppStyle(Application.Current);
+                ThemeManager.ChangeAppStyle(Application.Current,
+                                            ThemeManager.GetAccent(txt),
+                                            ThemeManager.GetAppTheme("BaseLight"));
             }
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            CloudIntegration = Convert.ToBoolean(UseCloudcb.IsChecked);
+            AssemblyDebug = Convert.ToBoolean(Debugcb.IsChecked);
+            DeveloperOptions = Convert.ToBoolean(Developercb.IsChecked);
+            AssembliesUpdate = Convert.ToBoolean(Updateacb.IsChecked);
+            UpdateCore = Convert.ToBoolean(CoreInjectcb.IsChecked);
+            Inject = Convert.ToBoolean(Injectcb.IsChecked);
         }
 
     }

@@ -146,17 +146,17 @@
                     </DataGrid>
                     <ComboBox x:Name="Langcb" HorizontalAlignment="Left" Margin="237,195,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Langcb_SelectionChanged"/>
                     <Label Content="Language" HorizontalAlignment="Left" Margin="169,196,0,0" VerticalAlignment="Top" Width="65"/>
-                    <ComboBox x:Name="Themecb" HorizontalAlignment="Left" Margin="237,227,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Themecb_SelectionChanged"/>
+                    <ComboBox  x:Name="Themecb" HorizontalAlignment="Left" Margin="237,227,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Themecb_SelectionChanged"/>
                     <Label Content="Color" HorizontalAlignment="Left" Margin="169,228,0,0" VerticalAlignment="Top" Width="65"/>
-                    <CheckBox Content="Use Cloud Integration" HorizontalAlignment="Left" Margin="169,262,0,0" VerticalAlignment="Top" Width="153"/>
-                    <CheckBox Content="Enable Assemlby Debug (may decrese performance)" HorizontalAlignment="Left" Margin="169,285,0,0" VerticalAlignment="Top" Width="302"/>
-                    <CheckBox Content="Enable developer options" HorizontalAlignment="Left" Margin="169,308,0,0" VerticalAlignment="Top" Width="169"/>
-                    <CheckBox Content="Update assemblies on start" HorizontalAlignment="Left" Margin="169,331,0,0" VerticalAlignment="Top" Width="169"/>
-                    <CheckBox Content="Update core on inject" HorizontalAlignment="Left" Margin="169,354,0,0" VerticalAlignment="Top" Width="169"/>
-                    <CheckBox Content="Inject" HorizontalAlignment="Left" Margin="169,377,0,0" VerticalAlignment="Top" Width="169"/>
+                    <CheckBox x:Name="UseCloudcb" Content="Use Cloud Integration" HorizontalAlignment="Left" Margin="169,262,0,0" VerticalAlignment="Top" Width="153"/>
+                    <CheckBox x:Name="Debugcb" Content="Enable Assembly Debug (may decrese performance)" HorizontalAlignment="Left" Margin="169,285,0,0" VerticalAlignment="Top" Width="302"/>
+                    <CheckBox x:Name="Developercb" Content="Enable developer options" HorizontalAlignment="Left" Margin="169,308,0,0" VerticalAlignment="Top" Width="169"/>
+                    <CheckBox x:Name="Updateacb" Content="Update assemblies on start" HorizontalAlignment="Left" Margin="169,331,0,0" VerticalAlignment="Top" Width="169"/>
+                    <CheckBox x:Name="CoreInjectcb" Content="Update core on inject" HorizontalAlignment="Left" Margin="169,354,0,0" VerticalAlignment="Top" Width="169"/>
+                    <CheckBox x:Name="Injectcb" Content="Inject" HorizontalAlignment="Left" Margin="169,377,0,0" VerticalAlignment="Top" Width="169"/>
                     <Button Content="Logout" HorizontalAlignment="Left" Margin="795,370,0,0" VerticalAlignment="Top" Width="75"/>
                     <Button Content="APPDATA" HorizontalAlignment="Left" Margin="795,340,0,0" VerticalAlignment="Top" Width="75"/>
-                    <Button Content="SAVE CONFIG" HorizontalAlignment="Left" Margin="795,310,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Content="SAVE CONFIG" HorizontalAlignment="Left" Margin="795,310,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
                 </Grid>
             </TabItem>
         </TabControl>

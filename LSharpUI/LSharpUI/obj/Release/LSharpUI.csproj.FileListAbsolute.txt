@@ -1,3 +1,10 @@
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\Resources\Icons.baml
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\Resources\IconsNonShared.baml
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\App.baml
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\MainWindow.g.cs
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\App.g.cs
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI_MarkupCompile.cache
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI_MarkupCompile.lref
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Release\LSharpUI.exe.config
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Release\LSharpUI.exe
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Release\LSharpUI.pdb
@@ -6,16 +13,9 @@ C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Release\Syst
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Release\MahApps.Metro.pdb
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Release\MahApps.Metro.xml
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\MainWindow.baml
-C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\Resources\Icons.baml
-C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\Resources\IconsNonShared.baml
-C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\App.baml
-C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\MainWindow.g.cs
-C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\App.g.cs
-C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI_MarkupCompile.cache
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI.g.resources
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI.Properties.Resources.resources
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI.csproj.GenerateResource.Cache
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI.exe
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI.pdb
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI.csprojResolveAssemblyReference.cache
-C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Release\LSharpUI_MarkupCompile.lref

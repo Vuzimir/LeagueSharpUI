@@ -6,3 +6,4 @@ C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharp
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.csproj.GenerateResource.Cache
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\bin\Debug\LSharpUI.exe.config
 C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI.csprojResolveAssemblyReference.cache
+C:\Users\Vuzee\Documents\GitHub\LeagueSharpUI\LSharpUI\LSharpUI\obj\Debug\LSharpUI_MarkupCompile.lref
